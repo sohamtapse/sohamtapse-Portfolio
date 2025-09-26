@@ -11,10 +11,11 @@ const Homepage = () => {
           Crafting AI Solutions using Web Experiences.
         </h1>
         <p className="text-sm md:text-2xl">
-          I'm Soham Tapse, a Computer Engineering student passionate about
-          backend development, AI, using full-stack solutions. With hands-on
-          experience as a Full Stack Intern.
+          {`I'm Soham Tapse, a Computer Engineering student passionate about
+            backend development, AI, using full-stack solutions. With hands-on
+            experience as a Full Stack Intern.`}
         </p>
+
         <div className="flex w-full gap-4 text-sm md:text-2xl">
           <button className="p-2 lg:p-4 rounded-lg ring-1 ring-black bg-black text-white">
             View My Work
