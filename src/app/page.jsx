@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import Typewriter from "typewriter-effect";
 
 const Homepage = () => {
   return (
@@ -8,7 +10,23 @@ const Homepage = () => {
       </div>
       <div className="h-1/2 lg:h-full lg:w-1/2 flex lg:gap-10 flex-col gap-6 items-center justify-center">
         <h1 className="text-2xl md:text-6xl font-bold">
-          Crafting AI Solutions using Web Experiences.
+          Crafting AI Solutions using{" "}
+          <span className="inline-block lg:block">
+            <Typewriter
+              options={{
+                strings: [
+                  "NextJs.",
+                  "LangChain.",
+                  "ReactJs.",
+                  "NodeJs.",
+                  "FastApi.",
+                  "RAG.",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </span>
         </h1>
         <p className="text-sm md:text-2xl">
           {`I'm Soham Tapse, a Computer Engineering student passionate about
