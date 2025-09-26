@@ -1,5 +1,31 @@
+import Image from "next/image";
+
 const Homepage = () => {
-  return <div>Hello World</div>;
+  return (
+    <div className=" h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-1/2 lg:h-full lg:w-1/2 relative ">
+        <Image src="/soham.png" alt="" fill className="object-contain" />
+      </div>
+      <div className="h-1/2 lg:h-full lg:w-1/2 flex lg:gap-10 flex-col gap-6 items-center justify-center">
+        <h1 className="text-2xl md:text-6xl font-bold">
+          Crafting AI Solutions using Web Experiences.
+        </h1>
+        <p className="text-sm md:text-2xl">
+          I'm Soham Tapse, a Computer Engineering student passionate about
+          backend development, AI, using full-stack solutions. With hands-on
+          experience as a Full Stack Intern.
+        </p>
+        <div className="flex w-full gap-4 text-sm md:text-2xl">
+          <button className="p-2 lg:p-4 rounded-lg ring-1 ring-black bg-black text-white">
+            View My Work
+          </button>
+          <button className="p-2 lg:p-4 rounded-lg ring-1 ring-black">
+            Contact Me
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Homepage;
