@@ -9,7 +9,7 @@ const Homepage = () => {
         <Image src="/soham.png" alt="" fill className="object-contain" />
       </div>
       <div className="h-1/2 lg:h-full lg:w-1/2 flex lg:gap-10 flex-col gap-6 items-center justify-center">
-        <h1 className="text-2xl md:text-6xl font-bold">
+        <h1 className="text-3xl md:text-6xl font-bold">
           Crafting AI Solutions using{" "}
           <span className="inline-block lg:block">
             <Typewriter
@@ -28,7 +28,7 @@ const Homepage = () => {
             />
           </span>
         </h1>
-        <p className="text-sm md:text-2xl">
+        <p className="text-base md:text-2xl">
           {`I'm Soham Tapse, a Computer Engineering student passionate about
             backend development, AI, using full-stack solutions. With hands-on
             experience as a Full Stack Intern.`}
