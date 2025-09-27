@@ -124,18 +124,64 @@ const Navbar = () => {
           ></motion.div>
         </button>
         {open && (
-          <motion.div
-            variants={listVariants}
-            initial="closed"
-            animate="opened"
-            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
-          >
-            {links.map((link) => (
-              <motion.div key={link.title} variants={listItemVariants}>
-                <Link href={link.url}>{link.title}</Link>
+          <>
+            <motion.div
+              variants={listVariants}
+              initial="closed"
+              animate="opened"
+              className="absolute  top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
+            >
+              <div className="flex flex-col  items-center justify-center gap-8">
+                {links.map((link) => (
+                  <motion.div key={link.title} variants={listItemVariants}>
+                    <Link href={link.url} onClick={() => setOpen(!open)}>
+                      {link.title}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+
+              <motion.div
+                variants={listItemVariants}
+                className="gap-4  flex items-center justify-center"
+              >
+                <Link
+                  href="https://github.com/sohamtapse/"
+                  target="_blank"
+                  className="text-white bg-white rounded-full "
+                >
+                  <Image
+                    src="/github.png"
+                    alt="github"
+                    width={24}
+                    height={24}
+                  />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/soham-tapse-03993126b/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/linkedin.png"
+                    alt="linkedin"
+                    width={24}
+                    height={24}
+                  />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/soham.tapse/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/instagram.png"
+                    alt="insta"
+                    width={24}
+                    height={24}
+                  />
+                </Link>
               </motion.div>
-            ))}
-          </motion.div>
+            </motion.div>
+          </>
         )}
       </div>
     </div>
