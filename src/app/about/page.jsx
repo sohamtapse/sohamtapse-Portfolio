@@ -200,24 +200,39 @@ const AboutPage = () => {
             >
               EXPERIENCE
             </motion.h1>
-            <motion.div
-              initial={{ x: "-300px" }}
-              animate={isExperienceRefInView ? { x: "0" } : {}}
-              className=""
-            >
-              <div className="flex flex-col w-full px-1">
-                <h1 className="font-bold text-xl">Full Stack Intern</h1>
-                <p className="">
-                  Developed and maintained core features of the company website
-                  using React.js v18, Node.js v16, and Express.js v4, achieving
-                  a 20% improvement in website performance. Collaborated
-                  directly with clients to translate their ideas into
-                  functional, production-ready solutions.
-                </p>
-                <h1 className="font-bold">AUG 2024 - MAR 2025</h1>
-                <h1 className="font-bold text-xl">Axia.ai</h1>
+            <div className="flex gap-6">
+              {/* Timeline (left side) */}
+              <div className="relative">
+                {/* Vertical line */}
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[2px] h-full bg-gray-300"></div>
               </div>
-            </motion.div>
+
+              {/* Experience list */}
+              <div className="flex flex-col gap-12 w-full">
+                {/* One Experience */}
+                <div className="relative flex gap-6">
+                  {/* Dot */}
+                  <div className="absolute -left-8 top-2 w-4 h-4 rounded-full bg-black border-2 border-white"></div>
+
+                  <motion.div
+                    initial={{ x: "-300px" }}
+                    animate={isExperienceRefInView ? { x: "0" } : {}}
+                    className="flex flex-col w-full"
+                  >
+                    <h1 className="font-bold text-xl">Full Stack Intern</h1>
+                    <p>
+                      Developed and maintained core features of the company
+                      website using React.js v18, Node.js v16, and Express.js
+                      v4, achieving a 20% improvement in website performance.
+                      Collaborated directly with clients to translate their
+                      ideas into functional, production-ready solutions.
+                    </p>
+                    <h1 className="font-bold">AUG 2024 - MAR 2025</h1>
+                    <h1 className="font-bold text-xl">Axia.ai</h1>
+                  </motion.div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         {/* SVG CONTAINER */}
