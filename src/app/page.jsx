@@ -18,7 +18,7 @@ const Homepage = () => {
         <div className="h-1/2 lg:h-full lg:w-1/2 flex lg:gap-10 flex-col gap-6 items-center justify-center">
           <h1 className="text-3xl md:text-6xl font-bold">
             Crafting AI Solutions using{" "}
-            <span className="inline-block ">
+            <span className="block 2xl:inline-block">
               <Typewriter
                 options={{
                   strings: [
