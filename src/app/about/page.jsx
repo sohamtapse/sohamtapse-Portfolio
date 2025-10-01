@@ -27,36 +27,24 @@ const AboutPage = () => {
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-28 lg:gap-40 xl:gap-44 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
-          <div className="flex flex-col gap-8 lg:mt-[-60px] justify-center items-center">
-            <motion.h1
-              initial={{ x: 0 }}
-              animate={isSkillRefInView ? { x: "-300px" } : {}}
-              transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
-            >
-              BIOGRAPHY
-            </motion.h1>
+          <div className="flex flex-col gap-8 lg:mt-[-40px] justify-center items-center ">
+            <h1 className="font-bold text-2xl"> BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
-            <motion.div
-              initial={{ x: 0 }}
-              animate={isSkillRefInView ? { x: "-300px" } : {}}
-              className="flex gap-4 flex-wrap items-center justify-center"
+
+            <p className="text-lg text-center">
+              I am Soham Hemant Tapse, a passionate and driven Computer
+              Engineering student. With a keen interest in backend development,
+              AI, and system analysis, I continuously explore opportunities to
+              enhance my technical skills through practical projects and
+              innovative problem-solving.
+            </p>
+            <a
+              href="/resume.pdf"
+              download
+              className="px-6 py-3 bg-black text-white hover:bg-white hover:text-black rounded shadow-md transition"
             >
-              <p className="text-lg text-center">
-                I am Soham Hemant Tapse, a passionate and driven Computer
-                Engineering student. With a keen interest in backend
-                development, AI, and system analysis, I continuously explore
-                opportunities to enhance my technical skills through practical
-                projects and innovative problem-solving.
-              </p>
-              <a
-                href="/resume.pdf"
-                download
-                className="px-6 py-3 bg-black text-white hover:bg-white hover:text-black rounded shadow-md transition"
-              >
-                Download Resume
-              </a>
-            </motion.div>
+              Download Resume
+            </a>
 
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -83,7 +71,7 @@ const AboutPage = () => {
           </div>
           {/* SKILLS CONTAINER */}
           <div
-            className="flex flex-col gap-12 justify-center items-center"
+            className="flex flex-col gap-12 justify-center items-center "
             ref={skillRef}
           >
             {/* SKILL TITLE */}
@@ -188,7 +176,7 @@ const AboutPage = () => {
           </div>
           {/* EXPERIENCE CONTAINER */}
           <div
-            className="flex flex-col gap-12 justify-center items-center pb-48"
+            className="flex flex-col gap-12 justify-center items-center pb-48 "
             ref={experienceRef}
           >
             {/* EXPERIENCE TITLE */}
