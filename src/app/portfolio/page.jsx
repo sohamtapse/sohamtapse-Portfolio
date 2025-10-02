@@ -95,11 +95,11 @@ const PortfolioPage = () => {
             {items.map((item) => (
               <div
                 key={item.id}
-                className="h-screen w-screen  flex items-center justify-center bg-black py-20"
+                className="h-screen w-screen  flex items-center justify-center bg-black py-20 min-w-[100vw]"
               >
                 {/* Card container */}
                 <div
-                  className={`flex flex-col gap-8 h-[650px] text-black rounded-2xl shadow-2xl bg-gradient-to-r ${item.color} p-8 lg:p-12 max-w-6xl`}
+                  className={`flex flex-col gap-8 h-[650px] text-black rounded-2xl shadow-2xl bg-gradient-to-r ${item.color} p-8 lg:p-12 w-full md:max-w-6xl mx-20`}
                 >
                   <h1 className="text-2xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
