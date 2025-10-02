@@ -33,7 +33,7 @@ const items = [
     id: 4,
     color: "from-purple-300 to-red-300",
     title: "StudyPal",
-    desc: "Ai pawerd summary maker make student life easer using next.js talwind css and of ai Gemini ai.",
+    desc: "AI-Powered Summary Maker – A web application designed to simplify students’ academic workflow by generating concise summaries from study material using Next.js, Tailwind CSS, and Gemini AI. This tool leverages advanced AI to save time, enhance learning efficiency, and make study sessions more effective.",
     img: "/Projects/StudyPal.png",
     link: "https://study-pal-umber.vercel.app/dashboard",
   },
