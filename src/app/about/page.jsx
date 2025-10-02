@@ -34,7 +34,7 @@ const AboutPage = () => {
             <p className="text-lg text-center">
               I am Soham Hemant Tapse, a passionate and driven Computer
               Engineering student. With a keen interest in backend development,
-              AI, and system analysis, I continuously explore opportunities to
+              AI and system analysis, I continuously explore opportunities to
               enhance my technical skills through practical projects and
               innovative problem-solving.
             </p>
