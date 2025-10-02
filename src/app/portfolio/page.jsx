@@ -117,9 +117,9 @@ const PortfolioPage = () => {
 
                     {/* ✅ updated: added flex & justify-between */}
                     <div className="w-1/3 flex flex-col justify-between">
-                      <p className="w-80 lg:w-full lg:text-lg">{item.desc}</p>
+                      <p className="w-72 lg:w-full lg:text-lg">{item.desc}</p>
                       <Link href={item.link} target="_blank" className="pt-5">
-                        <button className="px-2 py-1 lg:px-6 lg:py-3 text-lg bg-black text-white hover:bg-white hover:text-black rounded shadow-md transition">
+                        <button className="px-1 py-1 lg:px-6 lg:py-3 text-lg bg-black text-white hover:bg-white hover:text-black rounded shadow-md transition">
                           See Demo
                         </button>
                       </Link>
