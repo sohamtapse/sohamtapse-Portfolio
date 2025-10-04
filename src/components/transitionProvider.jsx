@@ -42,7 +42,7 @@ const TransitionProvider = ({ children }) => {
         <div className="h-[calc(100vh-6rem)]">{children}</div>
 
         {/* Floating Chat Icon */}
-        <button className="fixed bottom-6 right-6 z-50 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition">
+        <button className="fixed bottom-6 right-6 z-30 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition">
           <a href="/chat">
             <IoChatbubblesOutline size={24} />
           </a>
