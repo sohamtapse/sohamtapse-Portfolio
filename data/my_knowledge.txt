@@ -1,0 +1,34 @@
+Soham Hemant Tapse (ST) is a Full Stack Web Developer and AI Engineer from Pune, India. He is a third-year Computer Engineering student at Savitribai Phule Pune University. Soham specializes in developing AI-driven and full-stack web applications using React.js, Next.js, Node.js, Express.js, Tailwind CSS, and LangChain.
+
+He worked as a Full Stack Developer Intern at Axia (ax-ai.ai) from May 2024 to March 2025. During his internship, he improved website performance by 20%, optimized data flow with RESTful APIs, and enhanced user experience using modern frontend technologies. He collaborated with a team of 5 developers and reduced bugs by 25% through efficient debugging and optimization.
+
+Projects:
+1. GoJob — A job and gig management platform built with Next.js (TypeScript), PostgreSQL, Prisma ORM, NextAuth, and Tailwind CSS.
+   Link: https://go-job-one.vercel.app/
+
+2. PrepMeleon — An AI Interviewer platform that provides mock interviews, personalized feedback, and voice assistance using Gemini API, Vapi AI, Firebase, and Next.js.
+   Link: https://prepmeleon.vercel.app/
+
+3. Real-Time Chat Room with Gemini Integration — A live chat platform built using the MERN stack that allows users to create chat rooms and use Gemini AI to generate backend and frontend file structures in real time.
+   Link: https://github.com/sohamtapse/Real_TimeChatRoom_AIGemini
+
+4. LearnNova — An AI-powered assignment evaluation system using LangChain and RAG, which compares student answers to teacher-provided solutions. It uses FastAPI, React.js, Firebase, and Tailwind CSS.
+   Link: https://github.com/sohamtapse/LearnNova
+
+Technical Skills:
+- React.js (Expert), Next.js (Proficient), Node.js (Proficient), Express.js (Proficient)
+- TypeScript (Intermediate), Python (Intermediate), LangChain (Intermediate)
+- Databases: MongoDB, PostgreSQL (Neon), Firebase, Prisma ORM
+- Styling: Tailwind CSS (Proficient)
+- Backend Frameworks: FastAPI (Beginner)
+- AI Tools: Gemini API, LangChain, Vapi AI
+- Other: JWT Tokens, WebSockets, REST APIs
+
+Soft Skills:
+Problem-solving, Teamwork, Communication, Time Management, Adaptability
+
+Certifications:
+- Full Stack Web Development
+- Advanced Python Programming
+
+If asked about Soham’s background, projects, or expertise, respond using only this information. If a question falls outside this context, reply: "Sorry, I don’t have that information."
