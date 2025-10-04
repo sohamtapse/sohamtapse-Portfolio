@@ -1,9 +1,10 @@
 "use client";
-import { AnimatePresence, delay } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import React from "react";
 import Navbar from "./navbar";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { IoChatbubblesOutline } from "react-icons/io5";
 
 const TransitionProvider = ({ children }) => {
   const pathName = usePathname();
@@ -34,10 +35,18 @@ const TransitionProvider = ({ children }) => {
           initial={{ height: "140vh" }}
           animate={{ height: "0vh", transition: { delay: 0.5 } }}
         />
+
         <div className="h-24">
           <Navbar />
         </div>
         <div className="h-[calc(100vh-6rem)]">{children}</div>
+
+        {/* Floating Chat Icon */}
+        <button className="fixed bottom-6 right-6 z-50 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition">
+          <a href="/chat">
+            <IoChatbubblesOutline size={24} />
+          </a>
+        </button>
       </div>
     </AnimatePresence>
   );
